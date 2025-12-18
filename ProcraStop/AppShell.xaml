@@ -4,11 +4,16 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:ProcraStop"
+    xmlns:dashboard="clr-namespace:ProcraStop.Views.DashboardView"
     Title="ProcraStop">
 
     <ShellContent
-        Title="Home"
+         Title="Dashboard"
+         ContentTemplate="{DataTemplate dashboard:DashboardView}"
+         Route="MainPage" />
+    <!--<ShellContent
+        Title="MainPage"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="MainPage" />-->
 
 </Shell>
