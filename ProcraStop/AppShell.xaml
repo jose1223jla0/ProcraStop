@@ -4,16 +4,21 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:ProcraStop"
-    xmlns:dashboard="clr-namespace:ProcraStop.Views.DashboardView"
+    xmlns:initial="clr-namespace:ProcraStop.Pages.StartPages"
     Title="ProcraStop">
 
-    <ShellContent
-         Title="Dashboard"
-         ContentTemplate="{DataTemplate dashboard:DashboardView}"
-         Route="MainPage" />
-    <!--<ShellContent
-        Title="MainPage"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />-->
+    <TabBar>
+        <ShellContent
+            Title="Initial"
+            Icon="dotnet_bot.png"
+            ContentTemplate="{DataTemplate initial:InitialPage}"
+            Route="InitialPage" />
+
+        <!--<ShellContent
+            Title="Dashboard"
+            Icon="splash.png"
+            ContentTemplate="{DataTemplate dashboard:DashboardView}"
+            Route="DashboardView" />-->
+    </TabBar>
 
 </Shell>

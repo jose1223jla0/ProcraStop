@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ProcraStop.Helpers"
+             x:Class="ProcraStop.Pages.StartPages.LoginPage"
+             Title="LoginPage">
+    <Grid RowDefinitions="Auto,*,Auto">
+        <GraphicsView HeightRequest="300"
+                      Grid.Row="0"
+                      HorizontalOptions="Fill"
+                      VerticalOptions="Start">
+            <GraphicsView.Drawable>
+                <local:CurvedHeaderDrawable />
+            </GraphicsView.Drawable>
+        </GraphicsView>
+
+
+        <VerticalStackLayout Grid.Row="1" 
+                             Padding="5"
+                             Spacing="5"
+                             Margin="10,0,10,0">
+            <Label Text="Iniciar Sesión"
+                   TextColor="#333"
+                   FontAttributes="Bold"
+                   FontSize="28"/>
+            <Label Text="Email"
+                   FontAttributes="Bold"
+                   TextColor="#777"
+                   FontSize="16"/>
+
+            <Border BackgroundColor="Transparent"
+                    Stroke="#ff7f7f"
+                    StrokeShape="RoundRectangle 10">
+                <Grid ColumnDefinitions="Auto,*"
+                      Padding="2"
+                      ColumnSpacing="8">
+                    <Label Grid.Column="0"
+                           FontFamily="Iconos"
+                           VerticalOptions="Center"
+                           FontSize="30"
+                           TextColor="{StaticResource Gray600}"
+                           Text="&#xe158;" />
+                    <Entry Grid.Column="1"
+                           x:Name="entryCorreo"
+                           Placeholder="Ingrese su Correo"
+                           BackgroundColor="Transparent"/>
+                </Grid>
+            </Border>
+
+            <Label Text="Contraseña"
+                   TextColor="#777"
+                   FontAttributes="Bold"
+                   FontSize="16"/>
+
+            <Border BackgroundColor="Transparent"
+                    Stroke="#ff7f7f"
+                    StrokeShape="RoundRectangle 10">
+                <Grid ColumnDefinitions="Auto,*"
+                      Padding="2"
+                      ColumnSpacing="8">
+                    <Label Grid.Column="0"
+                           FontFamily="Iconos"
+                           VerticalOptions="Center"
+                           TextColor="{StaticResource Gray600}"
+                           FontSize="30"
+                           Text="&#xe897;" />
+                    <Entry Grid.Column="1"
+                           x:Name="entryContraseña"
+                           Placeholder="Ingrese su Contraseña"
+                           IsPassword="True"
+                           BackgroundColor="Transparent"/>
+                </Grid>
+            </Border>
+
+            <Button Text="Login"
+                    Margin="0,15,0,0"
+                    Clicked="Button_Clicked"
+                    BackgroundColor="#ff7f7f"
+                    TextColor="{StaticResource Gray100}"
+                    FontAttributes="Bold">
+                <Button.ImageSource>
+                    <FontImageSource FontFamily="Iconos" 
+                                     Size="30"
+                                     Glyph="&#xea77;"/>
+                </Button.ImageSource>
+
+                <Button.Shadow>
+                    <Shadow Brush="Black"
+                            Radius="5"
+                            Opacity="0.6"
+                            Offset="0,2">
+                    </Shadow>
+                </Button.Shadow>
+            </Button>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

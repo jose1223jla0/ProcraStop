@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ProcraStop.Helpers"
+             x:Class="ProcraStop.Pages.StartPages.InitialPage"
+             Title="InitialPage">
+    <Grid RowDefinitions="Auto,*,Auto">
+        <GraphicsView HeightRequest="300"
+                          Grid.Row="0"
+                          HorizontalOptions="Fill"
+                          VerticalOptions="Start">
+            <GraphicsView.Drawable>
+                <local:CurvedHeaderDrawable />
+            </GraphicsView.Drawable>
+        </GraphicsView>
+
+        <VerticalStackLayout Padding="10"
+                             Grid.Row="1">
+            <Label Text="¡Bienvenido a ProcraStop!"
+                   VerticalOptions="Start"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="#333"/>
+            <Label Text="Organiza tu horario, gestiona tus tareas y recibe recordatorios inteligentes que te ayudarán a dejar la procrastinación atrás.&#10;Empieza hoy a aprovechar mejor tu tiempo."
+                   TextColor="#777"
+                   Margin="60,20,0,0"
+                   LineBreakMode="WordWrap" />
+        </VerticalStackLayout>
+
+        <Button VerticalOptions="End"
+                BackgroundColor="#ff7f7f"
+                Padding="5"
+                Grid.Row="2"
+                Margin="10"
+                Clicked="Button_Clicked"
+                HorizontalOptions="End">
+            <Button.ImageSource>
+                <FontImageSource FontFamily="Iconos" 
+                                 Size="25"
+                                 Glyph="&#xe5c8;"/>
+            </Button.ImageSource>
+
+            <Button.Shadow>
+                <Shadow Brush="Black"
+                        Radius="5"
+                        Opacity="0.8"
+                        Offset="0,5">
+                </Shadow>
+            </Button.Shadow>
+        </Button>
+    </Grid>
+</ContentPage>

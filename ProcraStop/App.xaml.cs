@@ -1,7 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-
-namespace ProcraStop;
-
+﻿namespace ProcraStop;
 public partial class App : Application
 {
     public App()

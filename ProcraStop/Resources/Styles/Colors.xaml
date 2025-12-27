@@ -29,6 +29,7 @@
     <Color x:Key="Orange">#A25C20</Color>
     <Color x:Key="Stars">#F16C2A</Color>
     <Color x:Key="fondo">#711DBA</Color>
+    <Color x:Key="input">#E1F0EE</Color>
 
     <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Primary}"/>
     <SolidColorBrush x:Key="SecondaryBrush" Color="{StaticResource Secondary}"/>
