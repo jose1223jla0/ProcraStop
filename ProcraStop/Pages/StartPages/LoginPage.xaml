@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:ProcraStop.Helpers"
              x:Class="ProcraStop.Pages.StartPages.LoginPage"
              Title="LoginPage">
+    
     <Grid RowDefinitions="Auto,*,Auto">
         <GraphicsView HeightRequest="300"
                       Grid.Row="0"
@@ -20,9 +21,8 @@
                              Spacing="5"
                              Margin="10,0,10,0">
             <Label Text="Iniciar Sesión"
-                   TextColor="#333"
-                   FontAttributes="Bold"
-                   FontSize="28"/>
+                   Style="{StaticResource TitleColor}"
+                   FontAttributes="Bold"/>
             <Label Text="Email"
                    FontAttributes="Bold"
                    TextColor="#777"
@@ -35,10 +35,10 @@
                       Padding="2"
                       ColumnSpacing="8">
                     <Label Grid.Column="0"
-                           FontFamily="Iconos"
+                           Margin="10,0,0,0"
+                           Style="{StaticResource IconsRegular}"
                            VerticalOptions="Center"
                            FontSize="30"
-                           TextColor="{StaticResource Gray600}"
                            Text="&#xe158;" />
                     <Entry Grid.Column="1"
                            x:Name="entryCorreo"
@@ -59,10 +59,10 @@
                       Padding="2"
                       ColumnSpacing="8">
                     <Label Grid.Column="0"
-                           FontFamily="Iconos"
+                           Style="{StaticResource IconsRegular}"
                            VerticalOptions="Center"
-                           TextColor="{StaticResource Gray600}"
                            FontSize="30"
+                           Margin="10,0,0,0"
                            Text="&#xe897;" />
                     <Entry Grid.Column="1"
                            x:Name="entryContraseña"
@@ -76,10 +76,10 @@
                     Margin="0,15,0,0"
                     Clicked="Button_Clicked"
                     BackgroundColor="#ff7f7f"
-                    TextColor="{StaticResource Gray100}"
+                    TextColor="White"
                     FontAttributes="Bold">
                 <Button.ImageSource>
-                    <FontImageSource FontFamily="Iconos" 
+                    <FontImageSource FontFamily="IconsOutlined" 
                                      Size="30"
                                      Glyph="&#xea77;"/>
                 </Button.ImageSource>

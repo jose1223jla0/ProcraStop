@@ -18,11 +18,10 @@
                              Grid.Row="1">
             <Label Text="¡Bienvenido a ProcraStop!"
                    VerticalOptions="Start"
-                   FontSize="28"
-                   FontAttributes="Bold"
-                   TextColor="#333"/>
+                   Style="{StaticResource TitleColor}"
+                   FontAttributes="Bold"/>
             <Label Text="Organiza tu horario, gestiona tus tareas y recibe recordatorios inteligentes que te ayudarán a dejar la procrastinación atrás.&#10;Empieza hoy a aprovechar mejor tu tiempo."
-                   TextColor="#777"
+                   Style="{StaticResource SubTitleColor}"
                    Margin="60,20,0,0"
                    LineBreakMode="WordWrap" />
         </VerticalStackLayout>
@@ -35,7 +34,7 @@
                 Clicked="Button_Clicked"
                 HorizontalOptions="End">
             <Button.ImageSource>
-                <FontImageSource FontFamily="Iconos" 
+                <FontImageSource FontFamily="IconsOutlined" 
                                  Size="25"
                                  Glyph="&#xe5c8;"/>
             </Button.ImageSource>

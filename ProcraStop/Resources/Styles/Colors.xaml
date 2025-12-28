@@ -30,6 +30,15 @@
     <Color x:Key="Stars">#F16C2A</Color>
     <Color x:Key="fondo">#711DBA</Color>
     <Color x:Key="input">#E1F0EE</Color>
+    <Color x:Key="TitleColor">#333</Color>
+    <Color x:Key="SubTitleColor">#777</Color>
+
+
+    <Color x:Key="TitleColorLight">#404040</Color>
+    <Color x:Key="TitleColorDark">#FFFFFF</Color>
+
+
+
 
     <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Primary}"/>
     <SolidColorBrush x:Key="SecondaryBrush" Color="{StaticResource Secondary}"/>

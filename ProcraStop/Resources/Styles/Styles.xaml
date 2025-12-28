@@ -22,17 +22,31 @@
         <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource Gray200}}" />
     </Style>
 
-    <Style TargetType="Label" x:Key="icons">
-        <Setter Property="FontFamily" Value="Icons"/>
-        <Setter Property="FontSize" Value="35"/>
-        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource White}}" />
+    <Style TargetType="Label" x:Key="IconsRegular">
+        <Setter Property="FontFamily" Value="IconsRegular"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray300}}" />
     </Style>
 
 
-    <Style TargetType="Label" x:Key="Iconos">
-        <Setter Property="FontFamily" Value="Iconos"/>
-        <Setter Property="FontSize" Value="35"/>
-        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource Gray200}}" />
+    <Style TargetType="Label" x:Key="IconsOutlined">
+        <Setter Property="FontFamily" Value="IconsOutlined"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource Gray400}}" />
+    </Style>
+
+
+    
+    <Style TargetType="Label" x:Key="TitleColor">
+        <Setter Property="FontFamily" Value="OpenSansRegular"/>
+        <Setter Property="FontSize" Value="28"/>
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TitleColor }, Dark={StaticResource Gray300}}" />
+    </Style>
+
+    <Style TargetType="Label" x:Key="SubTitleColor">
+        <Setter Property="FontFamily" Value="OpenSansRegular"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TitleColor }, Dark={StaticResource Gray200}}" />
     </Style>
 
     <Style TargetType="Button">
